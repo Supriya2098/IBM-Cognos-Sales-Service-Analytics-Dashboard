@@ -1,210 +1,164 @@
-📊 IBM Cognos Sales & Service Analytics Dashboard
+# 📊 IBM Cognos Sales & Service Analytics Dashboard
+
+## 📑 Table of Contents
+- [Overview](#overview)
+- [Business Problem](#business-problem)
+- [Dataset](#dataset)
+- [Data Cleaning](#data-cleaning)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Research Questions & Key Findings](#research-questions--key-findings)
+- [Dashboard Explanation](#dashboard-explanation)
+- [Tools & Techniques](#tools--techniques)
+- [Project Structure](#project-structure)
+- [How to Run This Project](#how-to-run-this-project)
+- [Key Recommendations](#key-recommendations)
+- [Contact & Author](#contact--author)
+
+---
+
+## 🔍 Overview
+This project showcases an interactive enterprise-style dashboard built using **IBM Cognos Analytics**, **Excel**, and **VBA automation**.  
+The goal is to transform raw sales and service data into meaningful insights related to revenue, profit, customer sentiment, and product recalls for faster business decision-making.
+
+---
+
+## 🎯 Business Problem
+Organizations need quick and reliable insights from large datasets to:
+- Monitor sales and profit trends  
+- Identify high-performing and low-performing products  
+- Understand customer sentiment  
+- Detect recall patterns and affected systems  
+- Support strategic and operational decisions  
+
+---
+
+## 📂 Dataset
+### Data Source  
+Simulated enterprise dataset containing:
+- Product models  
+- Dealer information  
+- Sales, profit, quantity sold  
+- Customer sentiment  
+- Recall counts  
+- Affected systems  
+- Monthly trends  
+
+### Key Columns
+- Model  
+- Dealer_ID  
+- Sales  
+- Profit  
+- Quantity_Sold  
+- Customer_Sentiment  
+- Recall_Count  
+- Affected_System  
+- Month  
+
+---
+
+## 🧹 Data Cleaning
+Performed using **Excel & VBA Macros**:
+- Handling missing values  
+- Removing duplicates  
+- Standardizing formats  
+- Validating categorical fields  
+- Automating repetitive preparation steps  
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+- Monthly sales and profit trends  
+- Quantity sold by model  
+- Dealer-wise performance  
+- Customer sentiment distribution  
+- Recall frequency by system and product  
+
+---
+
+## ❓ Research Questions & Key Findings
+1. Which months generate the highest profit and sales?  
+2. Which models and dealers contribute most to revenue?  
+3. How does customer sentiment vary across products?  
+4. Which systems are most affected by recalls?  
+5. How efficiently can enterprise dashboards be built using Cognos?  
+
+**Key Findings:**
+- Clear seasonality in sales and profit  
+- Certain models and dealers dominate revenue  
+- Majority of customers show positive sentiment  
+- Specific systems show higher recall concentration  
+- IBM Cognos enables rapid, business-ready dashboard creation  
+
+---
+
+## 📈 Dashboard Explanation
+### Key Visuals
+- KPI Cards: Total Profit, Quantity Sold  
+- Monthly Profit vs Quantity Trends  
+- Dealer-wise Profit Distribution  
+- Model-wise Quantity Sold  
+- Customer Sentiment Breakdown  
+- Recall Analysis by System and Model  
 
-📑 Table of Contents
+*(Add your dashboard images in `/dashboard/images` and reference here)*
 
-#Overview
+Example:
 
-#Business Problem
 
-#Dataset
+yaml
+Copy code
 
-#Data Cleaning
+---
 
-#Exploratory Data Analysis (EDA)
+## 🛠 Tools & Techniques
+- IBM Cognos Analytics – Dashboarding & Visualization  
+- Microsoft Excel – Data Cleaning & Transformation  
+- VBA Macros – Automation  
+- Data Modeling & KPI Design  
+- Git & GitHub – Version Control  
 
-#Research Questions & Key Findings
+---
 
-#Dashboard 
-
-#Tools & Techniques
-
-#Project Structure
-
-#How to Run This Project
-
-#Key Recommendations
-
-#Contact & Author
-
-##🔍 Overview
-
-This project presents an interactive business intelligence dashboard built using IBM Cognos Analytics, supported by Excel and VBA automation.
-It analyzes sales performance, profitability, customer sentiment, and product recalls to provide quick, actionable insights for business decision-makers.
-
-##🎯 Business Problem
-
-Organizations need fast and reliable insights from large volumes of sales and service data to:
-
-Monitor revenue and profit trends
-
-Identify high-performing and low-performing products
-
-Track customer sentiment
-
-Detect recall patterns and risk areas
-
-Support strategic and operational decisions
-
-##📂 Dataset
-Data Source
-
-Simulated enterprise sales & service dataset containing:
-
-Product Models
-
-Dealer Information
-
-Sales, Profit, Quantity
-
-Customer Sentiment
-
-Recall Counts
-
-Affected Systems
-
-Monthly Time Series
-
-Key Columns
-
-Model
-
-Dealer_ID
-
-Sales
-
-Profit
-
-Quantity_Sold
-
-Customer_Sentiment
-
-Recall_Count
-
-Affected_System
-
-Month
-
-##🧹 Data Cleaning
-
-Performed using Excel & VBA Macros:
-
-Missing value handling
-
-Data type standardization
-
-Duplicate removal
-
-Category normalization
-
-Automated refresh using macros
-
-##📊 Exploratory Data Analysis (EDA)
-
-Trend analysis of Sales & Profit by Month
-
-Distribution of Quantity Sold by Model
-
-Sentiment classification (Positive, Neutral, Negative)
-
-Recall frequency by System and Product
-
-Dealer-wise performance comparison
-
-##❓ Research Questions & Key Findings
-
-Which months generate the highest profit and sales volume?
-
-Which models and dealers contribute most to revenue?
-
-How does customer sentiment vary across products?
-
-Which systems are most affected by recalls?
-
-How quickly can enterprise dashboards be built using IBM Cognos?
-
-##Key Findings:
-
-Clear seasonality in sales & profit
-
-Specific models and dealers drive majority of revenue
-
-Majority customer sentiment remains positive
-
-Certain systems show higher recall concentration
-
-IBM Cognos enables rapid, business-ready dashboard creation
-
-##📈 Dashboard
-Key Visuals
-
-KPI Cards: Total Sales, Profit, Quantity, Recalls
-
-Monthly Trend Charts
-
-Dealer-wise Profit Distribution
-
-Model-wise Sales Performance
-
-Customer Sentiment Breakdown
-
-Recall Heatmaps
-
-
-
-##🛠 Tools & Techniques
-
-IBM Cognos Analytics – Dashboarding & Visualization
-
-Microsoft Excel – Data Preparation
-
-VBA Macros – Automation
-
-Data Modeling
-
-KPI Design
-
-Git & GitHub – Version Control
-
-##📁 Project Structure
+## 📁 Project Structure
 ibm-cognos-sales-analytics-dashboard/
 │
 ├── data/
-│   └── sales_service_data.xlsx
+│ └── sales_service_data.xlsx
 ├── dashboard/
-│   ├── images/
-│   └── cognos_dashboard.pdf
+│ ├── images/
+│ └── cognos_dashboard.pdf
 ├── scripts/
-│   └── data_cleaning_macros.bas
+│ └── data_cleaning_macros.bas
 └── README.md
 
-##▶ How to Run This Project
+yaml
+Copy code
 
-Clone the repository
+---
 
-Open dataset in Excel
+## ▶ How to Run This Project
+1. Clone the repository  
+2. Open the dataset in Excel  
+3. Run VBA macros for cleaning  
+4. Load cleaned data into IBM Cognos  
+5. Open the dashboard  
+6. Explore visuals and filters  
 
-Run VBA macros for cleaning
+---
 
-Load cleaned data into IBM Cognos
+## 💡 Key Recommendations
+- Use automation for repetitive data preparation  
+- Focus on clarity over visual complexity  
+- Choose BI tools based on business needs, not trends  
+- Deliver insights fast for better decision-making  
 
-Open dashboard file
+---
 
-Explore interactive visuals and filters
-
-##💡 Key Recommendations
-
-Use automation for recurring data preparation
-
-Focus on clarity over visual complexity
-
-Choose BI tools based on business speed requirements
-
-Combine governance with self-service analytics
-
-##👩‍💻 Contact & Author
-
-Supriya
-Aspiring Data Analyst
-Skills: Excel | SQL | IBM Cognos | Power BI | Python | Data Visualization
+## 👩‍💻 Contact & Author
+**Supriya**  
+Aspiring Data Analyst  
+Skills: Excel | SQL | IBM Cognos | Power BI | Python | Data Visualization  
+LinkedIn: *(Add your profile link)*  
+Email: *(Optional)*  
 LinkedIn:https://www.linkedin.com/in/supriya-kusuma09/
 Email:supriyakusuma0905@gmail.com

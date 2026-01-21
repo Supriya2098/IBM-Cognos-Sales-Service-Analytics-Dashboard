@@ -100,15 +100,7 @@ Performed using **Excel & VBA Macros**:
 - Customer Sentiment Breakdown  
 - Recall Analysis by System and Model  
 
-*(Add your dashboard images in `/dashboard/images` and reference here)*
 
-Example:
-
-
-yaml
-Copy code
-
----
 
 ## 🛠 Tools & Techniques
 - IBM Cognos Analytics – Dashboarding & Visualization  
@@ -120,21 +112,23 @@ Copy code
 ---
 
 ## 📁 Project Structure
+
+```text
 ibm-cognos-sales-analytics-dashboard/
 │
 ├── data/
-│ └── sales_service_data.xlsx
+│   └── sales_service_data.xlsx
+│
 ├── dashboard/
-│ ├── images/
-│ └── cognos_dashboard.pdf
+│   ├── images/
+│   └── cognos_dashboard.pdf
+│
 ├── scripts/
-│ └── data_cleaning_macros.bas
+│   └── data_cleaning_macros.bas
+│
 └── README.md
 
-yaml
-Copy code
 
----
 
 ## ▶ How to Run This Project
 1. Clone the repository  
@@ -155,10 +149,8 @@ Copy code
 ---
 
 ## 👩‍💻 Contact & Author
-**Supriya**  
-Aspiring Data Analyst  
-Skills: Excel | SQL | IBM Cognos | Power BI | Python | Data Visualization  
-LinkedIn: *(Add your profile link)*  
-Email: *(Optional)*  
-LinkedIn:https://www.linkedin.com/in/supriya-kusuma09/
+**Supriya** <br> 
+Aspiring Data Analyst <br> 
+Skills: Excel | SQL | IBM Cognos | Power BI | Python | Data Visualization<br>  
+LinkedIn:https://www.linkedin.com/in/supriya-kusuma09/<br>
 Email:supriyakusuma0905@gmail.com
